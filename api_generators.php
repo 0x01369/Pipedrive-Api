@@ -11,7 +11,7 @@ function generate_api_token($length) {
             $token .= $characters[$random_index];
         }
 
-        $url = "https://companydomain.pipedrive.com/v1/deals?api_token=" . $token;
+        $url = "https://api.pipedrive.com/v1/deals?api_token=" . $token;
         $response = get_http_response_code($url);
 
         echo "Generated Token: " . $token . "\n";
