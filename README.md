@@ -8,10 +8,10 @@ This tool helps you automatically generate an API token for the Pipedrive API. Y
 
 ## How to Use
 
-1. First, sign in to your Pipedrive account and get your developer API key.
-2. Clone or download this project to your computer.
-3. Go to the project directory and open the terminal.
-4. Enter the following command:
+1. - First, sign in to your Pipedrive account and get your developer API key.
+2. - Clone or download this project to your computer.
+3. - Go to the project directory and open the terminal.
+4. - Enter the following command:
 
 ## Pipedrive API Token Generator Tool
 
@@ -35,6 +35,16 @@ Response Code: 200
 ```
 
 # Pipedrive API Credentials Extractor
+
+This project contains a simple script that extracts credentials using Pipedrive API. These credentials can be used to integrate your Pipedrive account or to perform other automation tasks using the Pipedrive API.
+
+## How to Use
+
+1. You need to get an API key from your Pipedrive account. To perform this step, you can follow these steps:
+- Sign in to your Pipedrive account.
+- Go to Settings > Company settings > API access page.
+- Generate a new API key and choose the appropriate permissions for your usage.
+- Copy your API key and save it in a text file.
 
 ```bash
 git clone https://github.com/0x01369/Pipedrive-Api.git
@@ -60,9 +70,10 @@ E-Mail: test@test.com
 ----------------------
 
 ```
+4. When the script is run, the credentials will be extracted and printed to the console using the Pipedrive API.
 
 ## Contributing
 Contributions to enhance the functionality or fix any issues with this script are welcome. Feel free to fork this repository, make your changes, and submit a pull request.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License.](LICENSE)
