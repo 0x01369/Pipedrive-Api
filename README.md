@@ -40,7 +40,7 @@ This project contains a simple script that extracts credentials using Pipedrive 
 
 ## How to Use
 
-1. You need to get an API key from your Pipedrive account. To perform this step, you can follow these steps:
+1. - You need to get an API key from your Pipedrive account. To perform this step, you can follow these steps:
 - Sign in to your Pipedrive account.
 - Go to Settings > Company settings > API access page.
 - Generate a new API key and choose the appropriate permissions for your usage.
