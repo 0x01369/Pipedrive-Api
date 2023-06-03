@@ -11,7 +11,7 @@ def generate_api_token(length):
             random_index = random.randint(0, characters_length - 1)
             token += characters[random_index]
 
-        url = "https://companydomain.pipedrive.com/v1/deals?api_token=" + token
+        url = "https://api.pipedrive.com/v1/deals?api_token=" + token
         response = requests.get(url).status_code
 
         print("Generated Token:", token)
