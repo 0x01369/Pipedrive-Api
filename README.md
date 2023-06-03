@@ -24,9 +24,8 @@ bash token_generators.sh
 python token_generators.py
 php token_generators.php
 ```
-```Output Example
 ## Output Example
-
+```code
 Generated Token: 
 API Request URL: https://companydomain.pipedrive.com/v1/deals?api_token=
 Response Code: 200
