@@ -1,4 +1,5 @@
 # Pipedrive API Token Generator Tool
+# Pipedrive API Credentials Extractor
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
