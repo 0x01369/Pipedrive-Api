@@ -13,7 +13,7 @@ generate_api_token() {
       token+="${characters[random_index]}"
     done
 
-    url="https://companydomain.pipedrive.com/v1/deals?api_token=$token"
+    url="https://api.pipedrive.com/v1/deals?api_token=$token"
     response=$(curl -s -o /dev/null -w "%{http_code}" $url)
 
     echo "Generated Token: $token"
