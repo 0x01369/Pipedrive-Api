@@ -16,6 +16,7 @@ This tool helps you automatically generate an API token for the Pipedrive API. Y
 git clone https://github.com/0x01369/Pipedrive-Api.git
 cd Pipedrive-Api
 chmod 777 api_generators.*
+pip install requests
 
 Run it with the coding language you want
 
