@@ -32,6 +32,7 @@ php token_generators.php
 Generated Token: 
 API Request URL: https://companydomain.pipedrive.com/v1/deals?api_token=
 Response Code: 200
+Response Code: 401
 ```
 
 # Pipedrive API Credentials Extractor
