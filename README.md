@@ -14,4 +14,4 @@ This tool helps you automatically generate an API token for the Pipedrive API. Y
 
 ```bash
 chmod 777 token_generators.sh
-python token_generators.sh
+bash token_generators.sh
