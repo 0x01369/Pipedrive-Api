@@ -1,6 +1,6 @@
 <?php
 
-$apiToken = 'd0cace5b73600aaf0309a64ac837e72e74a4827a';
+$apiToken = 'null';
 $url = 'https://api.pipedrive.com/v1/deals?api_token=' . $apiToken;
 
 // Initialize cURL session
