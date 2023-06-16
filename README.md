@@ -61,15 +61,17 @@ api_credentials_extractor.php
 ```
 ## Output Example
 ```code
+----------------------
 user information:
 ----------------------
-User name: TEST TEST
+User name: test test
 E-Mail: test@test.com
+Phone: 12345678900
 ----------------------
-User name: TEST TEST
+User name: test test
 E-Mail: test@test.com
+Phone: 12345678900
 ----------------------
-
 ```
 4. When the script is run, the credentials will be extracted and printed to the console using the Pipedrive API.
 
