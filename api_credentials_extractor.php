@@ -1,37 +1,53 @@
 <?php
 
 $api_token = "null";
-$api_url = "https://api.pipedrive.com/v1/users?api_token=" . $api_token;
+$base_url = "https://api.pipedrive.com/v1";
+$endpoints = array("users", "deals", "persons", "notes", "products", "organizations");
 
-// Get users with API request
-$response_data = file_get_contents($api_url);
-
-// Check if the response is empty
-if (empty($response_data)) {
-    echo "Could not get a valid response from the API.";
-    exit(1);
+function make_api_request($endpoint) {
+    global $base_url, $api_token;
+    $url = "$base_url/$endpoint?api_token=$api_token";
+    return file_get_contents($url);
 }
 
-$response_data = json_decode($response_data, true);
+function print_user_info($user_data) {
+    $user_data = json_decode($user_data, true);
+    $user_count = count($user_data["data"]);
 
-// Operations that extract user information
-$user_count = count($response_data['data']);
-if ($user_count == 0) {
-    echo "User not Found.";
-    exit(0);
+    if ($user_count === 0) {
+        echo "User not found.\n";
+        exit(0);
+    }
+
+    echo "User information:\n";
+    echo "----------------------\n";
+
+    for ($i = 0; $i < $user_count; $i++) {
+        $username = $user_data["data"][$i]["name"];
+        $email = $user_data["data"][$i]["email"];
+        $phone = $user_data["data"][$i]["phone"];
+        echo "User name: $username\n";
+        echo "E-Mail: $email\n";
+        echo "Phone: $phone\n";
+        echo "----------------------\n";
+    }
 }
 
-echo "User İnformation:";
-echo "----------------------";
+foreach ($endpoints as $endpoint) {
+    $response_data = make_api_request($endpoint);
 
-for ($i = 0; $i < $user_count; $i++) {
-    $username = $response_data['data'][$i]['name'];
-    $email = $response_data['data'][$i]['email'];
+    if (empty($response_data)) {
+        echo "Could not get a valid response from the API.\n";
+        exit(1);
+    }
 
-    echo "----------------------";
-    echo "User name: $username";
-    echo "E-Mail: $email";
-    echo "----------------------";
+    echo "API request result ($endpoint):\n";
+    echo "----------------------\n";
+    echo "$response_data\n";
+    echo "----------------------\n";
 }
+
+$user_response_data = make_api_request("users");
+print_user_info($user_response_data);
+
 ?>
-
