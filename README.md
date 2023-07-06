@@ -2,6 +2,8 @@
 # Pipedrive API Credentials Extractor Tool
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![GitHub](https://img.shields.io/github/license/0x01369/Pipedrive-Api)
+![GitHub last commit](https://img.shields.io/github/last-commit/0x01369/Pipedrive-Api)
 
 
 This tool helps you automatically generate an API token for the Pipedrive API. You can use and interact with Pipedrive API using this token.
