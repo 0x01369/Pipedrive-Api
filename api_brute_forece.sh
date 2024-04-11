@@ -1,7 +1,7 @@
 #!/bin/bash
 
 base_url="https://api.pipedrive.com/v1"
-endpoints=("activities" "activityfields" "activitytypes" "billing" "callLogs" "channels" "currencies" "dealFields" "deals" "files" "filters" "goals" "itemsearch" "leads" "leadlabels" "leadSources" "legacyteams" "mailbox" "meetings" "notefields" "notes" "organizationfields" "organizationrelationships" "organizations" "permissionsets" "personfields" "persons" "pipelines" "productfields" "products" "projects" "projecttemplates" "recents" "roles" "stages" "subscriptions" "tasks" "UserConnections" "users" "usersSettings")
+endpoints=("users" "deals" "persons" "notes" "products" "organizations" "activities" "activityfields" "activitytypes" "billing" "callLogs" "channels" "currencies" "DealFields" "deals" "files" "filters" "goals" "İtemSearch" "leads" "LeadLabels" "LeadSources" "LegacyTeams" "mailbox" "meetings" "NoteFields" "notes" "OrganizationFields" "OrganizationRelationShips" "organizations" "PermissionSets" "PersonFields" "persons" "pipelines" "ProductFields" "products" "projects" "ProjectTemplates" "recents" "roles" "stages" "subscriptions" "tasks" "UserConnections" "users" "UsersSettings")
 
 # Read API tokens from token.txt file
 api_tokens=$(<token.txt)
